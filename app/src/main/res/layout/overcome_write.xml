@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#6A38E2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="질병 극복 후기 글 작성"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/over_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="글 제목"
+            android:maxLines="1"
+            app:theme="@style/EditTextStyle"
+            tools:ignore="MissingPrefix"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ece7f6"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/over_contents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="글 내용"
+                android:background="@android:color/transparent"
+                app:theme="@style/EditTextStyle"
+                tools:ignore="MissingPrefix"/>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cookandroid.pinfo">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/logo5"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo5"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="HardcodedDebugMode">
+        <activity android:name=".Main.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Main.JoinActivity"></activity>
+        <activity android:name=".LMain.LMainActivity"></activity>
+        <activity android:name=".LMain.BoardActivity"></activity>
+        <activity android:name=".LMain.MypageActivity"></activity>
+        <activity android:name=".LMain.PillActivity"></activity>
+        <activity android:name=".LMain.StoreActivity"></activity>
+        <activity android:name=".LMain.MotherActivity"></activity>
+        <activity android:name=".LMain.QrActivity"></activity>
+        <activity android:name=".LMain.MapActivity"></activity>
+        <activity android:name=".Mypage.BoxActivity"></activity>
+        <activity android:name=".Mypage.CheckActivity" android:parentActivityName=".Mypage.AlarmActivity"></activity>
+        <activity android:name=".Mypage.AlarmActivity" ></activity>
+        <activity android:name=".Mypage.CheckDBActivity"></activity>
+        <activity android:name=".Mypage.CalendarActivity"></activity>
+        <activity android:name=".OvercomeBoard.Overcome"></activity>
+        <activity android:name=".OvercomeBoard.OvercomeActivity"></activity>
+        <activity android:name=".OvercomeBoard.ManagerActivity"></activity>
+        <activity android:name=".OvercomeBoard.QuestionActivity"></activity>
+        <activity android:name=".Card.CardListActivity"></activity>
+        <receiver android:name=".Mypage.Alarm_Receiver" />
+        <service android:name=".Mypage.RingtonePlayingService"
+            android:enabled="true"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/> //진동
+    <uses-permission android:name="com.example.minji.googlemap.permisson.MAPS_RECRIVE"/>
+    <uses-permission android:name="com.example.minji.googlemap.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+</manifest>

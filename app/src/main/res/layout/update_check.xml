@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.cookandroid.pinfo.Mypage.CheckActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#6A38E2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="약 체크"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="약 이름"
+            android:layout_marginTop="30dp"
+            app:theme="@style/EditTextStyle"
+            tools:ignore="MissingPrefix"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="약 체크"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        `
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio">
+
+            <RadioButton
+                android:id="@+id/eat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="복용" />
+
+            <RadioButton
+                android:id="@+id/donteat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="미복용" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="메모"
+            android:inputType="number"
+            app:theme="@style/EditTextStyle"
+            tools:ignore="MissingPrefix"/>
+
+        <Button
+            android:id="@+id/buttonUpdateEmployee"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="저장"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:background="#341B6F"/>
+    </LinearLayout>
+</LinearLayout>

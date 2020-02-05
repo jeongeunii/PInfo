@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6A38E2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded"
+            android:gravity="center">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="지역명과 약국이름을 검색하세요"
+            android:textSize="16dp"
+            app:theme="@style/EditTextStyle"
+            tools:ignore="MissingPrefix"/>
+
+        <Button
+            android:id="@+id/mapbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_search"/>
+        <Button
+            android:id="@+id/gps"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_place"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.MapFragment" />
+    </LinearLayout>
+</LinearLayout>

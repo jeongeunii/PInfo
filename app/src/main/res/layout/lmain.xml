@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#6A38E2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/logo5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PInfo"
+                android:textSize="25dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/b_l_mypage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_person"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="마이페이지"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/b_l_pill"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/radius7"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_local"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="약 조회"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/b_l_store"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/radius6"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_local_hospital_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="약국 조회"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/b_l_mother"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/radius5"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_face"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="임산부 주의 약"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/b_l_map"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/radius3"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_location_on_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="지도"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/b_l_board"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/radius4"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_comment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="게시판"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/b_l_qr"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/radius"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="QR 코드"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

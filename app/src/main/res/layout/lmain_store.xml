@@ -1,0 +1,60 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#6A38E2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="약국 조회"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/EditStore"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:hint="시/동/읍을 입력해주세요"
+                app:theme="@style/EditTextStyle"
+                tools:ignore="MissingPrefix"/>
+
+            <Button
+                android:id="@+id/BtnStore"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_search"
+                android:onClick="mOnClick"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListS"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>

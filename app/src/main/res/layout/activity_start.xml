@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weet.weet.StartActivity"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:background="#6A38E2"
+                android:gravity="center"
+                android:text="질문게시판"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/user_chat"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:hint="원하는 게시판 이름을 쓰세요"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/user_edit"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:hint="닉네임을 입력하세요"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/user_next"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="#6A38E2"
+                android:text="등록"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="현재 개설된 질문 게시판"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:background="#6A38E2"
+                />
+            <ListView
+                android:id="@+id/chat_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
